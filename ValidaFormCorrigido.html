@@ -1,0 +1,132 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="./figures/favicon.ico">
+        <title>Sistema Geral - Inserir Profissional</title>
+        
+        <script type="text/javascript">
+        	
+function validaForm() {
+ 
+  var concordo = document.querySelector('input[name="concordo"]:checked');
+
+  if (concordo && concordo.value === 'sim') {
+    return true;
+  } else {
+    alert('Você deve aceitar o contrato');
+    return false;
+  }
+}
+</script>
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">GERALDO CESAR CANTELLI</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">2000.00000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">GERALDO CESAR CANTELLI</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ReferenceId msdt:dt="string"></mso:ReferenceId>
+<mso:ContentTypeId msdt:dt="string">0x0101004BAA89E22E1F2A4CBB9F81FCD32E93F4</mso:ContentTypeId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+     <body>
+       
+            <div id="mybody" class="divContent" style="overflow-x:auto;">
+            	<table cellspacing="15">
+	            	<form onsubmit ="return validaForm()" 
+	            	method="post" action="aula.php">
+					
+	            	<tr>
+	            		<th colspan="2">Inserir Profissional</th>
+	            	</tr>
+	            	<tr>
+	                	<td>
+	                		Nome:
+	                	</td>
+	                	<td>
+	                		<input type="text" name="nome" maxlength = "250" size = "40" required>
+	                	</td>
+	                </tr>
+	                
+	                             
+	                <tr>
+	                	<td>
+	                		Cidade:
+	                	</td>
+	                	<td>
+	                		<input type="text" name="cidade" maxlength = "200" size = "40" required>
+	                	</td>
+	                </tr>
+
+	             
+	                <tr>
+	                	<td>
+	                		Estado:
+	                	</td>
+	                	<td>
+	                		<select id="estado" name="estado" required>
+							    <option value="AC">Acre</option>
+							    <option value="AL">Alagoas</option>
+							    <option value="AP">Amapá</option>
+							    <option value="AM">Amazonas</option>
+							    <option value="BA">Bahia</option>
+							    <option value="CE">Ceará</option>
+							    <option value="DF">Distrito Federal</option>
+							    <option value="ES">Espírito Santo</option>
+							    <option value="GO">Goiás</option>
+							    <option value="MA">Maranhão</option>
+							    <option value="MG">Mato Grosso</option>
+							    <option value="MS">Mato Grosso do Sul</option>
+							    <option value="MG">Minas Gerais</option>
+							    <option value="PA">Pará</option>
+							    <option value="PB">Paraíba</option>
+							    <option value="PR">Paraná</option>
+							    <option value="PE">Pernambuco</option>
+							    <option value="PI">Piauí</option>
+							    <option value="RJ">Rio de Janeiro</option>
+							    <option value="RN">Rio Grande do Norte</option>
+							    <option value="RS">Rio Grande do Sul</option>
+							    <option value="RO">Rondônia</option>
+							    <option value="RR">Roraima</option>
+							    <option value="SC">Santa Catarina</option>
+							    <option value="SP">São Paulo</option>
+							    <option value="SE">Sergipe</option>
+							    <option value="TO">Tocantins</option>
+							    <option value="EE">Estrangeiro</option>
+							</select>
+	                	</td>
+	                </tr>
+	              
+					<tr>
+						<td colspan="2" align="center"> 
+						  <table>
+							<tr>
+							  <td><input type="radio" name="concordo" id="concordo_sim" value="sim" required></td>
+							  <td>Sim</td>
+							</tr>
+							<tr>
+							  <td><input type="radio" name="concordo" id="concordo_nao" value="nao"></td>
+							  <td>Não</td>
+							</tr>
+						  </table>
+						</td>
+					  </tr>
+	                <tr>
+	            		<td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+	            	</tr>
+	            	</form>
+            	</table>
+            
+	        </div>
+	       
+		</div>
+    </body>
+</html>
